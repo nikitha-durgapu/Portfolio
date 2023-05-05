@@ -118,7 +118,13 @@ section .title::before{
   background: #FEF9F8;
   padding: 5%;
 }
-.about .about-content,
+.about .about-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .education .edu-content,
 .skills .skill-content,
 .contact .contact-content
@@ -130,6 +136,7 @@ section .title::before{
 }
 .about .about-content .col-left{
   width: 40%;
+  display: none;
 }
 .about .about-content .col-left img{
   height: 400px;
@@ -139,7 +146,8 @@ section .title::before{
   border: 1px solid #303179;
 }
 .about .about-content .col-right{
-  width: 60%;
+  align-self: center;
+  width: 80%;
 }
 .about .about-content .col-right .atext{
   font-size: 25px;
@@ -421,6 +429,7 @@ margin-top: 1.5%;
     display: flex;
     justify-content: center;
     margin: 0 auto 30px;
+    display: none;
   }
   .about .about-content .col-right{
     width: 100%;
